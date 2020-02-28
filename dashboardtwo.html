@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!--FONT AWESOME CDN-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--INDEX.CSS-->
+  <!--FONT AWESOME KIT-->
+  <script src="https://kit.fontawesome.com/135a977fe4.js" crossorigin="anonymous"></script>
+  <!--INDEX.CSS-->
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <!--MEDIADASHBTWO.CSS-->
+  <link rel="stylesheet" type="text/css" href="mediadashbtwo.css">
+  <!--JQUERY SCRIPT-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONT 2 -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <!-- BOOTSTRAP JS FOR COLLAPSE -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+  <div>
+    <div class="container-fluid confluid">
+
+      <div class="row main-row">
+        <div class="sidebar-left-main">
+
+
+          <!-- Ensure window size is always 100vh -->
+          <div class="container-fluid dashboard-wrapper" id="dashboard-wrapper">
+            <!-- side bar wrapper  -->
+            <div id="sidebar-wrapper">
+              <a id="toggle-menu" href="javascript:void(0)" onclick="myFunction(this)">
+                <div class="container menubardiv">
+
+
+                  <li class="menuli"><span class="menuword">MENU</span>
+                    <span class="sub-icon baricon">
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+                    </span>
+                  </li>
+                </div>
+              </a>
+
+              <!--   side-menu   -->
+              <ul id="side-menu">
+                <li class="family">ANALYTICS
+                  <span class="sub-icon">
+                    <i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                </li>
+                <li>AUDIT
+                  <span class="sub-icon">
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i></span>
+                </li>
+                <li>ANALYSIS
+                  <span class="sub-icon">
+                    <i class="fa fa-th-large" aria-hidden="true"></i></span>
+                </li>
+                <li>USERS
+                  <span class="sub-icon">
+                    <i class="fa fa-users" aria-hidden="true"></i></span>
+
+                </li>
+                <li>USER
+                  <span class="sub-icon user">
+                    <i class="fa fa-user" aria-hidden="true"></i></span>
+                </li>
+              </ul>
+              <!-- /. side-menu  -->
+
+            </div>
+            <!--/. side-bar-wrapper    -->
+
+            <!-- Page-content-wrapper   -->
+          </div>
+
+        </div>
+        <div class="main-content">
+          <div class="row rowheader">
+            <div class="col-lg-6 col-6 ewizflex">
+              <h4 class="ewiz"><span class="redcolor">e</span>WIZ</h4>
+            </div>
+            <div class="col-lg-6 col-6 settingcolumn">
+              <i class="fa fa-cog fa-lg setting" aria-hidden="true"></i>
+              <img src="https://img.icons8.com/color/48/000000/user-female-circle.png" class="female" alt="female-icon">
+              <span class="fweight">Hi,</span><span class="redcolor fweight">Alpa</span>
+              <div class="dropleft dropdownn">
+                <button class="btn btn-secondary alpadrop" type="button" id="dropdownMenuButto"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-angle-down bca" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButto">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="custompos">
+
+            <h5 class="mycustomers">My Customers</h5>
+
+
+          </div>
+
+          <!-- CARDS -->
+          <div class="container-fluid">
+            <div class="row rowtop">
+              <div class="col-sm col-md-4 col-xl-2 col-lg-4 sampleleftmar padrightzero">
+                <div class="card upcardt widthera">
+
+                  <div class="card-body">
+                    <div class="orders">
+                      <div>
+                        <p class="card-title family porder">Orders</p>
+                        <h3 class="numbfam margtopnumb">2,600</h3>
+                      </div>
+                      <div><img src="dash03.jpg" alt="graph"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm col-md-4 col-xl-2 col-lg-4 sampleleftmar padleftzero threepad">
+                <div class="card upcardt widthpand">
+
+                  <div class="card-body">
+                    <div class="orders">
+                      <div>
+                        <p class="card-title family porder">Sample Orders</p>
+                        <h3 class="numbfam margtopnumb">3,890</h3>
+                      </div>
+                      <div><img src="dash30.jpg" alt="graph"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm col-md-4 col-xl-2 col-lg-4 sampleleftmar padrightzero fivepad">
+                <div class="card upcardt widthbara">
+
+                  <div class="card-body">
+                    <div class="orders">
+                      <div>
+                        <p class="card-title family porder">Products</p>
+                        <h3 class="numbfam margtopnumb">68,903</h3>
+                      </div>
+                      <div><img src="circledashboard.png" class="circledashboard" alt="graph"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm col-md-6 col-xl-3 col-lg-6 sampleleftmar padrightzero padrightzeroo sevenpad">
+                <div class="card upcardt widthbis">
+
+                  <div class="card-body">
+                    <div class="orders">
+                      <div>
+                        <p class="card-title family porder">Shipping Locations</p>
+                        <h3 class="numbfam margtopnumb">80,368</h3>
+                      </div>
+                      <div><img src="circledashboard.png" class="circledashboard" alt="graph"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm col-md-6 col-xl-3 col-lg-6 sampleleftmar padrightzero padleftzero padleftzeroo twopad">
+                <div class="card upcardt">
+
+                  <div class="card-body">
+                    <div class="orders">
+                      <div>
+                        <p class="card-title family porder">Customers</p>
+                        <h3 class="numbfam margtopnumb">23,689</h3>
+                      </div>
+                      <div>
+                        <div class="yellicon">
+                          <div>
+                            <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+                          </div>
+
+                          <div class="white">
+                            <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+                            <i class="fa fa-male fa-2x" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARDS -->
+          <!-- CONTENT -->
+          <div class="bgcolor">
+
+            <div class="tableupcont">
+              <div class="hidebtndiv">
+                <button class="hidebtn"><i class="fa fa-angle-down agnleup" aria-hidden="true"></i>
+                <a href="index.html" class="showhide"> Show Statistics</a></button></div>
+              <div class="belowhide">
+                <div class="col-xl-3 col-12 col-md-5 searchdiv">
+                  <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                  <div class="input-group mb-2 searchdiv">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text searchicon"><i class="fa fa-search" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control searchinput" id="inlineFormInputGroup"
+                      placeholder="Search keywords">
+                  </div>
+                  <div class="dropleft dropbtn">
+                    <button class="btn btn-secondary btncolor" type="button" id="dropdownMenuButt"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      By customer<i class="fa fa-angle-down bca" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButt">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-9 col-12 col-md-7 displayblock">
+
+                  <p class="sline">|</p>
+                  <i class="fa fa-filter filterc" aria-hidden="true"></i>
+
+                  <div class="linecontent">
+                    <input type="checkbox" name="Select" value="Select All">
+                    <p class="selectall">Select All</p>
+                    <p class="sline">|</p>
+                    <div class="smtoggler">
+                      <div class="toglinettt"></div>
+                      <div class="toglineet"></div>
+                      <div class="toglinett"></div>
+                    </div>
+                    <i class="fa fa-th-large gridiconn" aria-hidden="true"></i>
+                    <p class="slinee">|</p>
+
+                    <div class="dropleft dropbtnn">
+                      <button class="btn btn-secondary btncolor" type="button" id="dropdownMenuBut"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Actions<i class="fa fa-angle-down bca" aria-hidden="true"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuBut">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROFILE CARDS -->
+            <div class="container-fluid profilediv">
+              <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-4">
+
+                  <div class="card upcardtu miltonmedia" data-toggle="collapse" href="#collapseExampleone" role="button"
+                    aria-expanded="false" aria-controls="collapseExampleone">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Milton Leonard</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">berneice_witting@gmail.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExampleone">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4">
+
+                  <div class="card upcardtu miltmarcardleft marginherit" data-toggle="collapse"
+                    href="#collapseExampletwo" role="button" aria-expanded="false" aria-controls="collapseExampletwo">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Sue Nunez</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">willa.mann@yahoo.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseExampletwo">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4">
+
+                  <div class="card upcardtu miltmarcardleft jakemargin jakeleftop" data-toggle="collapse"
+                    href="#collapseExamplethree" role="button" aria-expanded="false"
+                    aria-controls="collapseExamplethree">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Jake Peralta</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">jake_peralta@gmail.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseExamplethree">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 chandlertoppad">
+
+                  <div class="card upcardtu miltmarcardleft chandler marginheritop" data-toggle="collapse"
+                    href="#collapseExamplefour" role="button" aria-expanded="false" aria-controls="collapseExamplefour">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Clarence Chandler</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">rita.dare@hotmail.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseExamplefour">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              
+
+              
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltonmedia" data-toggle="collapse" href="#collapseExamplefive"
+                    role="button" aria-expanded="false" aria-controls="collapseExamplefive">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Jeffrey Richards</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">bergnaum.kayley@yahoo.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExamplefive">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltmarcardleft marginherit" data-toggle="collapse"
+                    href="#collapseExamplesix" role="button" aria-expanded="false" aria-controls="collapseExamplesix">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Amy Santiago</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">amy.santiago@gmail.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExamplesix">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltmarcardleft jakemargin jakeleftop" data-toggle="collapse"
+                    href="#collapseExampleseven" role="button" aria-expanded="false"
+                    aria-controls="collapseExampleseven">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Captain Holt</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">captain.holt@gmail.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExampleseven">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltmarcardleft chandler marginheritop" data-toggle="collapse"
+                    href="#collapseExampleeight" role="button" aria-expanded="false"
+                    aria-controls="collapseExampleeight">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Derek Lee</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">anissa.zulauf@yahoo.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExampleeight">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              
+
+
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltonmedia" data-toggle="collapse" href="#collapseExamplenine"
+                    role="button" aria-expanded="false" aria-controls="collapseExamplenine">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Warren Hart</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">bell_davis@yahoo.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExamplenine">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltmarcardleft marginherit" data-toggle="collapse"
+                    href="#collapseExampleten" role="button" aria-expanded="false" aria-controls="collapseExampleten">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Doug Judy</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">doug_judy@gmail.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExampleten">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltmarcardleft jakemargin jakeleftop" data-toggle="collapse"
+                    href="#collapseExampleeleven" role="button" aria-expanded="false"
+                    aria-controls="collapseExampleeleven">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Adrian Pimento</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">adrian.pimento@gmail.com</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExampleeleven">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-4 padtopone">
+
+                  <div class="card upcardtu miltmarcardleft chandler marginheritop" data-toggle="collapse"
+                    href="#collapseExampletwelve" role="button" aria-expanded="false"
+                    aria-controls="collapseExampletwelve">
+                    <div class="card-body cardbodyht">
+                      <div class="dotselect">
+                        <i class="fa fa-circle dott" aria-hidden="true"></i>
+                        <input type="checkbox" name="naam" value="naam">
+                      </div>
+                      <div class="username">
+                        <i class="fa fa-user userr" aria-hidden="true"></i>
+                        <h5>Lottie Colon</h5>
+                      </div>
+                      <div class="useremail">
+                        <i class="fa fa-envelope envelope" aria-hidden="true"></i>
+                        <p class="mailwork">gregorio.davis@amelie.io</p>
+                      </div>
+                      <div class="userwork">
+                        <i class="fa fa-briefcase work" aria-hidden="true"></i>
+                        <p class="mailwork">Wolf Group PVT LTD</p class="mailwork">
+                      </div>
+                    </div>
+
+                    <div class="collapse" id="collapseExampletwelve">
+                      <div class="card card-body collapsecard">
+                        <div class="hoverclasss">
+
+                          <p class="phonecolor">PHONE NO.</p>
+                          <h6 class="detailtwo">22 3030384883</h6>
+                          <p class="phonecolor detailone">REGISTER DATE</p>
+                          <h6 class="detailtwo">24-12-2016</h6>
+                          <p class="phonecolor detailone">STATE</p>
+                          <h6 class="detailtwo">CA</h6>
+                          <p class="phonecolor detailone">GROUP</p>
+                          <h6 class="detailtwo">Wolf Group</h6>
+                          <div>
+                            <i class="fa fa-hand-o-up fingup" aria-hidden="true"></i>
+                            <i class="fa fa-pencil pencil" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+          </div>
+            </div>
+          </div>
+          <!-- CONTENT -->
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!--Script for toggle bar-->
+        <!-- <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script> -->
+
+        <!--Script for toggle bar-->
+        <script type="text/javascript">
+          $("#toggle-menu").click(function (e) {
+            e.preventDefault();
+            $(".dashboard-wrapper").toggleClass("active");
+          });
+          function myFunction(x) {
+            x.classList.toggle("change");
+          }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+@media(min-width: 1px) and (max-width: 480px){
+    .sidebar-left-main {
+        width: 4%;
+    }
+    .main-content {
+        width: 96%;
+    }
+    .dashboard-wrapper #sidebar-wrapper {
+        left: -190px;
+      }
+      .dashboard-wrapper.active #sidebar-wrapper {
+        left: -110px;
+      }
+    
+    #toggle-menu {
+        width: 145%;
+    }
+    .menubardiv {
+        margin: 0;
+    }
+    .menuli{
+        display: flex;
+    justify-content: space-between;
+    }
+    .iconmargin {
+        display: none;
+    }
+    .rowheader {
+        height: 64px;
+    }
+    .female {
+        cursor: pointer;
+        width: 3.4rem;
+        height: auto;
+    }
+    .fweight {
+        display: none;
+    }
+    .papadrop {
+        margin-left: 4rem;
+    }
+    .ewiz {
+        font-weight: 800;
+    }
+    .custompos {
+        justify-content: space-around;
+        
+    }
+    .firstcard {
+        padding-left: 15px;
+    }
+    .upcard {
+        border: 1px solid #f2f2f2;
+        border-radius: 8px;
+        width: auto;
+    }
+    .downcard {
+        border: 1px solid #f2f2f2;
+        border-radius: 8px;
+        width: auto;
+        margin-top: 0.5rem;
+    }
+    .secndcolcards {
+        margin-top: 1rem;
+    }
+
+    .sidecards {
+        display: block;
+        padding-right: 0px;
+    }
+    .cardleftt {
+        margin-left: 1rem;
+    }
+    .cardleft {
+        margin-left: 1rem;
+    }
+    .cardwidth {
+        margin-top: 0.5rem;
+        width: 92%;
+        margin: auto;
+    }
+    .circlesize {
+        height: 3rem;
+        width: 3rem;
+        margin-top: 0rem;
+    }
+    .lastcardpad {
+        margin: auto;
+        width: 92%;
+    }
+    .lastcard {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .lctopmar {
+        padding-right: 0px;
+    }
+    
+    .dispay{
+        display: none;
+    }
+    .dispayy{
+        display: none;
+    }
+    .tablemartwo {
+        margin-left: 0rem;
+    }
+    .tablemar {
+        margin-left: 0rem;
+    }
+    .yelo {
+        margin-right: 0.5rem;
+    }
+      .tableupcont {
+        display: block;
+    }
+    .hidebtndiv {
+        padding-right: 4%;
+    }
+    .belowhide {
+        display: block;
+        width: 100%;
+    }
+    .searchdiv {
+        padding-top: 0.5rem;
+    }
+    .sline {
+        display: none;
+    }
+    .containermedia{
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .sidebar-left-main {
+        width: 12.3%;
+    }
+    .main-content {
+        width: 87.7%;
+    }
+    .addnew {
+        margin-left: 17rem;
+    }
+    .firstcard {
+        display: flex;
+    }
+    .upcard, .downcard {
+        width: 21rem;
+        border-radius: 8px 8px 8px 8px;
+    }
+    .secndcolcards {
+        margin-top: 1rem;
+        padding-left: 7px;
+    }
+    .sidecards {
+        display: flex;
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .cardwidth {
+        width: 21rem;
+    }
+    .cardleft {
+        margin-left: 0rem;
+    }
+    .circlesize {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    .cardbodpad{
+        padding-right: 1rem;
+    }
+    .lastcardpad{
+        padding-left: 15px;
+    }
+    .lastcard {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .dispay {
+        display: none;
+    }
+    .searchdiv {
+        width: 11rem;
+      }
+      .hidebtn {
+        width: 8rem;
+      }
+      
+      .firstcard{
+          padding-right: 0px;
+      }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sidebar-left-main {
+        width: 9.3%;
+    }
+    .main-content {
+        width: 90.7%;
+    }
+    .upcard {
+        width: max-content;
+    }
+    .downcard {
+        width: max-content;
+    }
+    .sidecards {
+        display: flex;
+        padding-right: 0px;
+        padding-left: 27px;
+    }
+    .lastcardpad {
+        padding-left: 27px;
+    }
+    .lctopmar {
+        padding-top: 15px;
+        padding-right: 70px;
+    }
+    .cardwidth {
+        /* width: 21rem; */
+    }
+    .circlesize {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .dispay {
+        display: none;
+    }
+}

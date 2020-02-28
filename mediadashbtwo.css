@@ -1,0 +1,180 @@
+@media(min-width: 1px) and (max-width: 480px) {
+    .sidebar-left-main {
+        width: 4%;
+    }
+    .main-content {
+        width: 96%;
+    }
+    .dashboard-wrapper #sidebar-wrapper {
+        left: -190px;
+    }
+
+    .dashboard-wrapper.active #sidebar-wrapper {
+        left: -110px;
+    }
+    #toggle-menu {
+        width: 145%;
+    }
+    .menubardiv {
+        margin: 0;
+    }
+    .menuli {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .iconmargin {
+        display: none;
+    }
+    .rowheader {
+        height: 64px;
+    }
+    .female {
+        cursor: pointer;
+        width: 3.4rem;
+        height: auto;
+    }
+
+    .fweight {
+        display: none;
+    }
+
+.rowtop{
+    padding-right: 0rem;
+}
+
+    .tableupcontt {
+        height: unset;
+    }
+
+    .divtableupcont {
+        margin-left: 0rem;
+    }
+
+    .belowhide {
+        display: block;
+        width: 100%;
+    }
+    .searchdiv {
+        padding-top: 0.5rem;
+    }
+
+    .selectalldiv {
+        margin-left: 31rem;
+    }
+
+    .selectall {
+        color: #bfbfbf;
+        padding-left: 0.5rem;
+        margin-bottom: inherit;
+        padding-right: 0rem;
+    }
+
+    .profilediv {
+        margin-left: 0rem;
+    }
+
+    .miltmarcardleft {
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .sidebar-left-main {
+        width: 12.3%;
+    }
+    .main-content {
+        width: 87.7%;
+    }
+    .sampleleftmar {
+        margin-right: auto;
+    }
+    .widthera {
+        width: 100%;
+    }
+
+    .widthpand {
+        width: max-content;
+    }
+
+    .widthbara {
+        width: auto;
+    }
+
+    .widthbis {
+        width: auto;
+    }
+    .padrightzero {
+        padding-right: 0px;
+    }
+    .padleftzero {
+        padding-left: 0px;
+    }
+
+    .searchdiv {
+        width: 10rem;
+    }
+
+    .showbtn {
+        margin-left: 11rem;
+    }
+
+    .slineo {
+        margin-left: -21rem;
+    }
+
+    .selectalldiv {
+        margin-left: 1rem;
+        width: max-content;
+    }
+
+    .jakemargin {
+        margin-left: auto;
+        margin-top: 1rem;
+    }
+
+    .chandler {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sidebar-left-main {
+        width: 9.3%;
+    }
+    .main-content {
+        width: 90.7%;
+    }
+    .widthera, .widthpand{
+        width: 19rem;
+    }
+    .sampleleftmar{
+        margin-right: auto;
+    }
+    .padrightzeroo{
+        padding-right: 6px;
+    }
+    .padleftzeroo{
+        padding-left: 0px;
+    }
+    .marginherit {
+        margin-left: inherit;
+    }
+    
+    .marginheritop {
+        margin-left: inherit;
+    }
+    .chandlertoppad {
+        padding-top: 1rem;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1500px) {
+    .threepad{padding-left: 3rem;}
+    .fivepad{padding-left: 5rem;}
+    .sevenpad{padding-left: 7rem;}
+    .twopad{padding-left: 2rem;}
+    .upcardt{width: 16rem;}
+    .sampleleftmar{margin-left: auto;}
+    #sidebar-wrapper { height: 122vh;}
+}
